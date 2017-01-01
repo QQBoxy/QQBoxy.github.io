@@ -5,13 +5,17 @@
 <title>SanSan</title>
 <style>
 h1 {
-	color: red;
+	animation: foo 5s infinite;
+	animation-delay: 2s;
 }
-h2 {
-	color: blue;
-}
-h3 {
-	color: green;
+
+@keyframes foo {
+	from {
+		color: black;
+	}
+	to {
+		color: white;
+	}
 }
 </style>
 </head>
