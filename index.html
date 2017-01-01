@@ -12,7 +12,6 @@ h1:hover {
 	animation-name: foo;
 	animation-duration: 1s;
 }
-
 @keyframes foo {
 	from {
 		color: black;
@@ -25,7 +24,9 @@ h1:hover {
 </head>
 <body>
 <script>
-
+document.getElementsByTagName("h2")[0].onclick = function() {
+	alert("2x+3y");
+};
 </script>
 <h1>Hello</h1>
 <h2>Hello</h2>
