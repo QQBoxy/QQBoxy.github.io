@@ -5,7 +5,12 @@
 <title>SanSan</title>
 <style>
 h1 {
-	animation: foo 1s infinite;
+	color: black;
+}
+h1:hover {
+	color: red;
+	animation-name: foo;
+	animation-duration: 1s;
 }
 
 @keyframes foo {
@@ -13,7 +18,7 @@ h1 {
 		color: black;
 	}
 	to {
-		color: white;
+		color: red;
 	}
 }
 </style>
