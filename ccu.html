@@ -12,9 +12,12 @@
     <button id="like">1</button>
     <script>
       let like = document.getElementById("like");
-      let num = parseInt(like.innerHTML, 10);
-      num = num + 1;
-      like.innerHTML = num + "";
+      let plus = function() {
+        let num = parseInt(like.innerHTML, 10);
+        num = num + 1;
+        like.innerHTML = num + "";
+      };
+      like.onclick = plus;
     </script>
   </body>
 </html>
