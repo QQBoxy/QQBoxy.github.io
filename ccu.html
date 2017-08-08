@@ -9,6 +9,12 @@
   </head>
   <body>
     <h1>Hello</h1>
-
+    <button id="like">1</button>
+    <script>
+      let like = document.getElementById("like");
+      let num = parseInt(like.innerHTML, 10);
+      num = num + 1;
+      like.innerHTML = num + "";
+    </script>
   </body>
 </html>
